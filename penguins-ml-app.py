@@ -60,7 +60,7 @@ st.subheader('Penguin by species')
 st.write(penguins_gr)
 
 penguins_gr.plot(kind = 'bar', figsize = (10, 6))
-plt.axis('equal')
+plt.xlabel('Species')
 st.pyplot()
 	
 st.subheader('Customizable plot')
