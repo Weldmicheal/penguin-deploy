@@ -59,7 +59,7 @@ penguins_gr = penguins_sp.groupby(['species']).mean()
 st.subheader('Penguin by species')
 st.write(penguins_gr)
 
-penguins_gr.plot(kind = 'bar')
+penguins_gr.plot(kind = 'bar', figsize = (10, 6))
 st.pyplot()
 	
 st.subheader('Customizable plot')
