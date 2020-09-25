@@ -21,7 +21,7 @@ st.sidebar.markdown("""
 """)
 
 uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type = ["CSV"])
-st.set_option('deprecation.showfileUploaderEncoding', False)
+#st.set_option('deprecation.showfileUploaderEncoding', False)
 
 if uploaded_file is not None:
 	input_df = pd.read_csv(uploaded_file)
